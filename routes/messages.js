@@ -46,7 +46,7 @@ router.delete("/:messageId", auth, async (req, res) => {
   }
 });
 
-router.podt("/", auth, async (req, res) => {
+router.post("/", auth, async (req, res) => {
   const { content } = req.body;
   const userId = req.user._id;
 

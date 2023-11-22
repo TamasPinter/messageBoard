@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import NavLinks from "../components/NavLinks";
-import Footer from "../components/Footer";
-import CommentForm from "../components/CommentForm";
-import MainPage from "../components/MainPage";
-import NewMessage from "../components/NewMessageForm";
-import ProfilePage from "../components/ProfilePage";
-import signUp from "../components/SignUp";
-import logIn from "../components/LogIn";
+import NavLinks from "./components/NavLinks";
+import Footer from "./components/Footer";
+import CommentForm from "./components/CommentSection";
+import MainPage from "./components/MainPage";
+import NewMessage from "./components/NewMessageForm";
+import ProfilePage from "./components/ProfilePage";
+import SignUp from "./components/SignUp";
+import LogIn from "./components/LogIn";
 
 export default function HomeContainer() {
   const [currentPage, setCurrentPage] = useState("MainPage");
@@ -16,10 +16,10 @@ export default function HomeContainer() {
       return <MainPage />;
     }
     if (currentPage === "SignUp") {
-      return <signUp />;
+      return <SignUp />;
     }
     if (currentPage === "LogIn") {
-      return <logIn />;
+      return <LogIn />;
     }
     if (currentPage === "NewMessage") {
       return <NewMessage />;
